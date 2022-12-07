@@ -3,4 +3,11 @@ body {
   padding: 0;
 }
 
+header img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
