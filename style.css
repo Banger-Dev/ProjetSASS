@@ -8,6 +8,8 @@ header img {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .search-bar {
@@ -21,8 +23,8 @@ header img {
   font-weight: bold;
   font-size: 15px;
   background-color: rgb(236, 234, 234);
-  border: rgb(228, 225, 225) solid 1px;
-  box-shadow: 0px 0px 0px 0px;
+  border: rgb(228, 225, 225);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
