@@ -71,6 +71,8 @@ body{
     }
 }
 .bloc-step{
+    display: flex;
+    flex-direction: column;
     h2{
         margin-left: 25px;
     }
@@ -80,12 +82,10 @@ body{
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(218, 217, 217);
     background-color: $BackGrey;
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: bold;
-    width: 320px;
     height: 60px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     align-items: center;
       display: flex;
       margin-top: 20px;
