@@ -38,13 +38,13 @@ header img {
   background-color: rgb(245, 241, 241);
   padding-top: 1px;
   padding-bottom: 40px;
-  text-align: center;
 }
-.bloc-reservation .bloc-reservation__tittle {
+.bloc-reservation__tittle {
   font-size: 25px;
   margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
 }
 .bloc-reservation p {
   color: gray;

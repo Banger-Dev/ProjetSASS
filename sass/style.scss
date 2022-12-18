@@ -42,14 +42,14 @@ body{
     background-color: $BackGrey;
     padding-top: 1px;
     padding-bottom: 40px;
-   .bloc-reservation__tittle{
+    &__tittle{
     font-size: 25px;
     margin-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    
-   }
     text-align: center;
+   }
+    
     p{
         color: gray;
         padding-left: 20px; 
