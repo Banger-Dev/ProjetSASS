@@ -55,7 +55,7 @@ body{
         padding-left: 20px; 
         padding-right: 20px;
     }
-    .bloc-reservation__button{
+    &__button{
        border: 1px solid $Secondary;
        border-radius: 30px;
        background-image: linear-gradient($Secondary,$Primary);
@@ -76,32 +76,33 @@ body{
     h2{
         margin-left: 25px;
     }
-}
-.bloc-step__button{
-    border: 1px solid $BackGrey;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgb(218, 217, 217);
-    background-color: $BackGrey;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-weight: bold;
-    height: 60px;
-    align-items: center;
-      display: flex;
-      margin-top: 20px;
-      margin-bottom: 20px;
-     justify-content: center;
-     &:hover{
-        background-color:#e6d7f8; 
-     }
-     .bloc-step__button_logo {
+    &__button{
+        border: 1px solid $BackGrey;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgb(218, 217, 217);
+        background-color: $BackGrey;
+        margin-left: 20px;
         margin-right: 20px;
-        color: gray;
-        font-size: 20px;
+        font-weight: bold;
+        height: 60px; 
+        align-items: center;
+          display: flex;
+          margin-top: 20px;
+          margin-bottom: 20px;
+         justify-content: center;
+         &:hover{
+            background-color:#e6d7f8; 
+         }
+         &__logo {
+            margin-right: 20px;
+            color: gray;
+            font-size: 20px;
+            
+        }
         
     }
-    
 }
+
 .circle_number{
     display: flex;
     justify-content: center;
