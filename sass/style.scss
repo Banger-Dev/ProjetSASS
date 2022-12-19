@@ -1,19 +1,5 @@
-@font-face {
-	font-family: 'Roboto';
-	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
-		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
-}
-$Primary:#9356DC;
-$Secondary:#FF79DA;
-$Tertiary:#99E2D0;
-$BackGrey:rgb(245, 241, 241);
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    max-width: 768px;
-    margin: auto;
-}
+@import "utils/variables";
+@import "base/global";
  header{
     img{   
     position: relative;
@@ -72,6 +58,7 @@ body{
         justify-content: center;
     }
 }
+// reflechir a une mixins button//
 .bloc-step{
     display: flex;
     flex-direction: column;
@@ -98,7 +85,8 @@ body{
             color: gray;
             font-size: 20px;
             &:hover{
-                color:$Primary; 
+                color:$Primary 
+                // hover syr le logo + button//
              }
             
         }
@@ -112,7 +100,7 @@ body{
     align-items: center;
     border: 1px solid $Primary;
     color: white;
-    background-color: #9356DC;
+    background-color: $Primary;
     border-radius: 50px;
     width: 25px;
     height: 25px;

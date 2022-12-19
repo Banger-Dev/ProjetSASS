@@ -3,3 +3,10 @@
 	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
 		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+    margin: auto;
+}
