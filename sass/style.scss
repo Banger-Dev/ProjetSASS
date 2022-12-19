@@ -11,6 +11,8 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 768px;
+    margin: auto;
 }
  header{
     img{   
@@ -90,13 +92,14 @@ body{
           margin-top: 20px;
           margin-bottom: 20px;
          justify-content: center;
-         &:hover{
-            background-color:#e6d7f8; 
-         }
+        
          &__logo {
             margin-right: 20px;
             color: gray;
             font-size: 20px;
+            &:hover{
+                color:$Primary; 
+             }
             
         }
         
