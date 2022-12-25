@@ -1,0 +1,19 @@
+header{
+    img{   
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    }
+ }
+
+ .header-menu__arrow{
+   position: absolute;
+   top: 30px;
+   left: 50px;
+   
+ }
