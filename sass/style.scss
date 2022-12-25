@@ -45,6 +45,7 @@
 .bloc-step{
     display: flex;
     flex-direction: column;
+    
     h2{
         margin-left: 25px;
     }
@@ -81,14 +82,14 @@
          &__logo {
             margin-right: 20px;
             color: gray;
-            font-size: 20px;
-            &:hover{
-                color:$Primary 
-                // hover syr le logo + button//
-             }
-            
+            font-size: 20px;         
         }
-        
+        &:hover{
+            background-color: lighten($color: $Primary, $amount: 35);
+            .bloc-step__button__logo {
+                color: $Primary;
+            }
+    }
     }
 
 }

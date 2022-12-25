@@ -165,7 +165,10 @@ footer li {
   color: gray;
   font-size: 20px;
 }
-.bloc-step__button__logo:hover {
+.bloc-step__button:hover {
+  background-color: #f2eafb;
+}
+.bloc-step__button:hover .bloc-step__button__logo {
   color: #9356DC;
 }
 
