@@ -18,6 +18,7 @@ header img {
   width: 50%;
   margin-bottom: 10px;
   margin-top: 20px;
+  display: flex;
 }
 
 .search-bar {
@@ -35,6 +36,36 @@ header img {
 }
 .search-bar__gps {
   padding-right: 10px;
+}
+
+.menu {
+  background-color: rgb(245, 241, 241);
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.menu__background img {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.menu__btn {
+  border: solid 1px white;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(218, 217, 217);
+  line-height: 0px;
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+  margin: 20px 10px 20px 10px;
+  width: auto;
+}
+.menu__btn__txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__btn__txt__price {
+  font-weight: bold;
 }
 
 footer {
@@ -112,6 +143,22 @@ footer li {
   margin-top: 20px;
   margin-bottom: 20px;
   justify-content: center;
+  position: relative;
+}
+.bloc-step__button__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9356DC;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 35%;
+  transform: translate(-35%);
 }
 .bloc-step__button__logo {
   margin-right: 20px;
@@ -122,23 +169,21 @@ footer li {
   color: #9356DC;
 }
 
-.circle_number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #9356DC;
-  color: white;
-  background-color: #9356DC;
-  border-radius: 50px;
-  width: 25px;
-  height: 25px;
-}
-
 .carte-menu {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+  position: relative;
+}
+.carte-menu .new-green {
+  background-color: rgb(116, 243, 116);
+  color: greenyellow;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  left: 75%;
 }
 
 .carte-menu__border {
@@ -147,6 +192,7 @@ footer li {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.062);
   margin-bottom: 20px;
+  position: relative;
 }
 .carte-menu__border img {
   object-fit: cover;
