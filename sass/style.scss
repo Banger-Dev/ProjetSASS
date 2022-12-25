@@ -1,33 +1,11 @@
-@import "utils/variables";
-@import "base/global";
-@import "layouts/header.scss";
-@import "layouts/footer.scss";
- header{
-    img{   
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    
-    }
- }
-.search-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    input{
-        flex-grow: 1;
-        height: 50px;
-        font-weight: bold;
-        font-size: 15px;
-        background-color: rgb(236, 234, 234);
-        border: rgb(228, 225, 225);
-        text-align: center;
-        color: rgb(63, 62, 62);
-    }
-}
+@import "utils/_variables";
+@import "base/_global";
+@import "layouts/_header.scss";
+@import "pages/_accueil-élement.scss";
+@import "layouts/_footer.scss";
+
+ 
+
 .bloc-reservation{
     background-color: $BackGrey;
     padding-top: 1px;
@@ -44,6 +22,7 @@
         color: gray;
         padding-left: 20px; 
         padding-right: 20px;
+        text-align: center;
     }
     &__button{
        border: 1px solid $Secondary;
@@ -81,7 +60,6 @@
           margin-top: 20px;
           margin-bottom: 20px;
          justify-content: center;
-        
          &__logo {
             margin-right: 20px;
             color: gray;
@@ -140,23 +118,3 @@
     margin-right: 10px;
     margin-left: 10px;
 }
-footer{
-    background-color: rgba(0, 0, 0, 0.815);
-    width: 100%;
-    color: white;
-    padding-bottom: 20px;
-    img{
-    margin-top: 10px ;
-    width: 30%;
-    margin-left: 30px;
-    filter:invert(100%);
-    -webkit-filter: invert(100%);
-    }
-    ul{
-        list-style-type: none;
-        display: flex;
-    }  
-    li{
-        margin-left: 10px;
-    }
-  }
