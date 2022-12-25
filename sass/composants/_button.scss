@@ -1,0 +1,11 @@
+.menu__btn{
+    border: solid 1px grey;
+    background-color: white;
+    line-height: 50%;
+    &__txt{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    }
+}
