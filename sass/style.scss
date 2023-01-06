@@ -1,10 +1,10 @@
 @import "utils/_variables";
 @import "base/_global.scss";
+@import "utils/_anime.scss";
 @import "layouts/_header.scss";
 @import "pages/_accueil-élement.scss";
 @import "pages/menu-section";
 @import "composants/_button";
-@import "utils/_anime.scss";
 @import "layouts/_footer.scss";
 
  
@@ -128,34 +128,6 @@
     }
     p{
         padding-left: 10px;
-        line-height: 5px;
-    }
-}
-.name_logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 10px;
-    margin-left: 10px;
-    position: relative;
-    i{
-        font-size: 1.5rem;
-    }
-    .solid-heart{
-        position: absolute;
-        right: 0px;
-        top: 18.5px;
-        bottom: 0px;
-        opacity: 0;
-        transition: opacity 1.2s ease-in;
-    }
-    &:hover{
-        .solid-heart{
-            opacity: 1;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient($Primary,$Secondary);
-        }
+        line-height: 0px;
     }
 }
