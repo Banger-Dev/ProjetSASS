@@ -1,16 +1,17 @@
 .menu__btn{
     display: flex;
-    border: solid 1px white;
+    border: solid 1px white;/* revoir les bordure ou les enlever*/
     background-color: white;
     box-shadow: 5px 5px 5px  rgb(218 217 217);
     border-radius: 20px;
     margin: 20px 10px 20px 10px;
-    overflow: hidden;
     width: auto;
+    @include text-elips;
     &__txt{
         display: flex;
         flex-direction: column;
         padding: 5px;
+        @include text-elips;
     }
     &__price{
         padding: 2px;
@@ -43,10 +44,13 @@
         .menu__btn__check{
             margin: 0;
         }
+        i {
+            animation: check-spin 0.6s linear ;
+        }
     }
-    animation:oppac 1.7s;
+    animation:oppac 1.7s linear;
    -webkit-animation:oppac 1.7s linear;
-   -webkit-transition: ease-out 0.5s;
-  -moz-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+   transition: linear 1.7s;
+   -webkit-transition: linear 1.7s;
+  -moz-transition: linear 1.7s;
 }
