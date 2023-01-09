@@ -1,11 +1,52 @@
 .menu__btn{
-    border: solid 1px grey;
+    display: flex;
+    border: solid 1px white;
     background-color: white;
-    line-height: 50%;
+    box-shadow: 5px 5px 5px  rgb(218 217 217);
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+    overflow: hidden;
+    width: auto;
     &__txt{
         display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
+        flex-direction: column;
+        padding: 5px;
     }
+    &__price{
+        padding: 2px;
+        display: flex;
+        align-items: flex-end;
+        width: 35px;
+    font-weight: bold;
+    margin-left: auto;
+    }
+    &__check{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -60px;
+        background-color: $Tertiary;
+        width: 60px;
+        transition: margin-right 0.8s ;
+        i{
+            display: grid;
+            place-items: center;
+            background: white;
+            border: 1px solid transparent;
+            color: $Tertiary;
+            border-radius: 50px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &:hover{
+        .menu__btn__check{
+            margin: 0;
+        }
+    }
+    animation:oppac 1.7s;
+   -webkit-animation:oppac 1.7s linear;
+   -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
