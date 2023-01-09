@@ -1,0 +1,6 @@
+
+@mixin text-elips{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
