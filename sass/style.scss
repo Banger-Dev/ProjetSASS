@@ -1,8 +1,8 @@
-@import "utils";
+@import "utils/index-utils.scss";
 @import "base/_global.scss";
 @import "layouts/_header.scss";
 @import "pages/_accueil-élement.scss";
-@import "pages/menu-section.scss";
+@import "pages/_menu-section.scss";
 @import "composants/_button.scss";
 @import "layouts/_footer.scss";
 
