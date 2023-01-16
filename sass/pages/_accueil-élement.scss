@@ -14,6 +14,10 @@
         &__gps{
             padding-right: 10px;
         }
+        @media screen and (min-width:993px) {
+            margin-left: 20px;
+            margin-right: 20px;
+           }
     }
 
     .loading{
@@ -29,7 +33,7 @@
          i{
             font-size: 5rem;
             color: $Primary;
-            animation: spinner 2.5s/* faire une variable*/linear;
+            animation: spinner 1.5s/* faire une variable*/infinite;
          }
          
     }
@@ -52,39 +56,20 @@
             text-align: center;
         }
         &__button{
-           border: 1px solid $Secondary;
-           border-radius: 30px;
-           background-image: linear-gradient($Secondary,$Primary);
-           color: white;
-           width: 220px;
-           height: 50px;
-           position: relative;
-           left: 50%;
-           transform: translateX(-50%);
-           align-items: center;
-             display: flex;
-            justify-content: center;
+           @include gradiant-btn;
         }
+        @media screen and (min-width:993px) {
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 0 0 20px 20px;
+           }
     }
-    // reflechir a une mixins button//
+
     .bloc-step{
         display: flex;
         flex-direction: column;
         &__button{
-            border: 1px solid $BackGrey;
-            border-radius: 20px;
-            box-shadow: 5px 5px 5px rgb(218, 217, 217);
-            background-color: $BackGrey;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-weight: bold;
-            height: 60px; 
-            align-items: center;
-              display: flex;
-              margin-top: 20px;
-              margin-bottom: 20px;
-             justify-content: center;
-             position: relative;
+           @include relative-btn;
              &__number{
                 display: flex;
         justify-content: center;
@@ -111,10 +96,17 @@
                     color: $Primary;
                 }
         }
+        @media screen and (min-width:993px){
+            width: 33.33%;
         }
-    
+        }
+       @media screen and (min-width:993px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
     }
-    h2{
+    .welcom-tittle{
         margin-left: 25px;
     }
     
@@ -124,6 +116,11 @@
         margin-left: 20px;
         margin-right: 20px;
         position: relative;
+        @media screen and (min-width:993px) {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+           }
         .new-green {
             background-color:palegreen;
             color: green;
@@ -134,7 +131,16 @@
             right: 10px;
         }
     }
-    
+    .card-background{
+        background-color: $BackGrey;
+        @media screen and (min-width:993px) {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 5px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+           }
+    }
     .carte-menu__border{
         width: 100%; 
         background: rgb(255, 255, 255);
@@ -152,6 +158,10 @@
             padding-left: 10px;
             line-height: 0px;
         }
+        @media screen and (min-width:993px) {
+            width: 45%;
+            margin-left: 25px;
+           }
     }
     
     .name_logo{
