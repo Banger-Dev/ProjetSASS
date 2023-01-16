@@ -1,11 +1,5 @@
-.menu__btn{
-    display: flex;
-    border: solid 1px white;/* revoir les bordure ou les enlever*/
-    background-color: white;
-    box-shadow: 5px 5px 5px  rgb(218 217 217);
-    border-radius: 20px;
-    margin: 20px 10px 20px 10px;
-    width: auto;
+.menu__btn{ 
+    @include white-btn;
     @include text-elips;
     &__txt{
         display: flex;
@@ -28,7 +22,7 @@
     margin-right: -60px;
         background-color: $Tertiary;
         width: 60px;
-        transition: margin-right 0.8s ;
+        transition: margin-right $check-duration ;
         i{
             display: grid;
             place-items: center;
@@ -45,12 +39,8 @@
             margin: 0;
         }
         i {
-            animation: check-spin 0.6s linear ;
+            animation: check-spin $check-duration linear ;
         }
     }
-    animation:oppac 1.7s linear;
-   -webkit-animation:oppac 1.7s linear;
-   transition: linear 1.7s;
-   -webkit-transition: linear 1.7s;
-  -moz-transition: linear 1.7s;
+    
 }
