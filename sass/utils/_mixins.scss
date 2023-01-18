@@ -1,6 +1,7 @@
 @mixin gradiant-btn{
     border-radius: 30px;
     background-image: linear-gradient($Secondary,$Primary);
+    box-shadow: 7px 7px 7px rgb(218, 217, 217);
     color: white;
     width: 220px;
     height: 50px;
@@ -11,7 +12,21 @@
       display: flex;
      justify-content: center;
 }
-
+@mixin relative-btn{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(218, 217, 217);
+    background-color: $BackGrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    height: 60px; 
+    align-items: center;
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     justify-content: center;
+     position: relative;
+}
 @mixin white-btn{
     display: flex;
     background-color: white;
