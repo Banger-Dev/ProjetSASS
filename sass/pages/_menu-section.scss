@@ -15,6 +15,16 @@
         flex-wrap: wrap;
         
        }
+       @media screen and (max-width:992px) and (min-width:769px){
+        margin: 10px;
+        width: inherit;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+       }
     &__background{
         img{
             background-position: center;
@@ -37,6 +47,9 @@
     @media screen and (min-width:993px){
         width: 33.33%;
        }
+       @media screen and (max-width:992px) and (min-width:769px){
+        width: 33.33%;
+       }
 }
 .order-button{
     @include gradiant-btn;
@@ -44,6 +57,9 @@
         left: 0;
     transform: translateX(-0%);
        }
-    
+       @media screen and (max-width:992px) and (min-width:769px){
+        left: 0;
+    transform: translateX(-0%);
+       }
 }
 

@@ -1,5 +1,5 @@
-.menu__btn{
-    opacity: 1;
+.menu-disposition{
+    opacity: 0;
 }
 @keyframes oppac{
     0%{
@@ -10,11 +10,11 @@ opacity: 0;
     }
 }
 
-@for $i from 1 through 9{
+@for $i from 1 through 3{
     .ord#{$i} {
   animation:oppac $oppac-duration linear;
   animation-delay:($i*$oppac-duration) ;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards ;
     }
 }
 

@@ -1,7 +1,13 @@
+
 @font-face {
-	font-family: 'Roboto';
+	font-family: 'Roboto'; 
 	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
 		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+      
+}
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(/font/Shrikhand-Regular.ttf);
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -9,4 +15,48 @@ body{
     padding: 0;
     max-width: 1400px;
     margin: auto;
+}
+.menu__tittle{
+    font-family: 'Shrikhand',sans-serif;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i{
+        margin-right: 30px;
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+    @media screen and (min-width:993px){
+        display: none;
+       }
+       @media screen and (max-width:992px) and (min-width:769px){
+        display: none;
+    }
+}
+.menu__tittle-desktop{
+    font-family: 'Shrikhand',sans-serif;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     i{
+    margin-right: 30px;
+    font-weight: normal;
+    font-size: 1.5rem;
+    }
+    @media screen and (max-width:769px) {
+        display: none;
+       }
+    }
+.menu__btn{
+    h4{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        @include text-elips;
+    }
+    p{
+        margin: 0;
+        @include text-elips;
+    }
 }
