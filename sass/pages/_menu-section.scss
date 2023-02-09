@@ -21,7 +21,6 @@
         border-radius: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
         
        }
@@ -48,7 +47,7 @@
         width: 33.33%;
        }
        @media screen and (max-width:992px) and (min-width:769px){
-        width: 33.33%;
+        width: 50%;
        }
 }
 .order-button{
@@ -59,7 +58,7 @@
        }
        @media screen and (max-width:992px) and (min-width:769px){
         left: 0;
-    transform: translateX(-0%);
+    transform: translate(50%,235px);
        }
 }
 
