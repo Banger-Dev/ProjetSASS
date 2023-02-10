@@ -2,13 +2,10 @@
 @font-face {
 	font-family: 'Roboto'; 
 	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
-		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’);
       
 }
-@font-face {
-    font-family: 'Shrikhand';
-    src: url(/font/Shrikhand-Regular.ttf);
-}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -17,7 +14,7 @@ body{
     margin: auto;
 }
 .menu__tittle{
-    font-family: 'Shrikhand',sans-serif;
+    font-family: 'Shrikhand', cursive,sans-serif;
     margin-left: 15px;
     display: flex;
     align-items: center;
@@ -35,7 +32,7 @@ body{
     }
 }
 .menu__tittle-desktop{
-    font-family: 'Shrikhand',sans-serif;
+    font-family: 'Shrikhand', cursive,sans-serif;
     margin-left: 15px;
     display: flex;
     align-items: center;
