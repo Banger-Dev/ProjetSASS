@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .menu-disposition {
   opacity: 0;
 }
@@ -46,10 +45,6 @@
   to {
     transform: rotate(0deg);
   }
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(‘/fonts/Robot-Regular.ttf’);
 }
 body {
   font-family: "Roboto", sans-serif;
